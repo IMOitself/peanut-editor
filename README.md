@@ -4,7 +4,19 @@ a true quick code editor for android written in java. no vibe coding:)
 ## the plan :D
 ![flowchart](flowchart.jpg)
 
-## history
+## history :D
+here are some attempts on trying to create a code editor:
+- [IMOaswell/frog](https://github.com/IMOaswell/frog) (May 17, 2024)
+- [IMOaswell/Nuts](https://github.com/IMOaswell/Nuts) (Jul 19, 2024)
+- [IMOitself/text](https://github.com/IMOitself/text) (Sep 2, 2024)
+- [IMOitself/peanut](https://github.com/IMOitself/peanut) (Nov 12, 2024)
+- [IMOitself/t](https://github.com/IMOitself/t) (Jan 30, 2025)
+- [IMOitself/text_editor_prototype1](https://github.com/IMOitself/text_editor_prototype1) (May 1, 2025)
+
+most of them failed. <br>probably because i end up micro managing unnecessary stuffs.
+
+
+## background
 <details>
   <summary>
     do u really want to read a long ahh text... 
