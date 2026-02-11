@@ -22,4 +22,6 @@ a true quick code editor for android written in java. no vibe coding:)
 - but the difference is that its super convenient and more productive, imo.
 - besides u can code anywhere and in any position u want not just sitting and staring on a computer screen.
 - that is why i want to create an app that is easy to use and faster to develop on. at least in my opinion.
+
+told u its long.
 </details>
