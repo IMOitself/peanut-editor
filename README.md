@@ -2,7 +2,7 @@
 a true quick code editor for android written in java. no vibe coding:)
 
 ## the plan :D
-![flowchart](flowchart.jpg)
+![flowchart](flowchart.png)
 
 ## history :D
 here are some attempts on trying to create a code editor:
