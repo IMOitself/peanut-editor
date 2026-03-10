@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -32,6 +33,7 @@ public class EditorView extends View {
     private void init() {
         mPaint = new Paint();
         mPaint.setTextSize(mTextSize);
+        mPaint.setTypeface(Typeface.MONOSPACE);
 		
 		TypedArray typedArray = getContext().obtainStyledAttributes(new int[]{android.R.attr.textColor});
 		mTextColor = typedArray.getColor(0, Color.RED);
