@@ -26,7 +26,7 @@ public class EditorView extends View {
     }
 
     private Paint mPaint;
-    private String mText = "beep boop ";
+    private String mText = "beep-boop-";
     private float mTextSize = 30f;
 	private int mTextColor = -1;
     private int mLettersToDrawSoFar = 1;
@@ -60,7 +60,7 @@ public class EditorView extends View {
 
         if (x < getWidth()) { // not hit the right edge yet
             mLettersToDrawSoFar++;
-            postInvalidateDelayed(1000);
+            postInvalidateDelayed(100);
             return;
         }
         // else
