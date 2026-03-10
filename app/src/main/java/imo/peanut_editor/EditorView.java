@@ -50,17 +50,18 @@ public class EditorView extends View {
         float x = 0;
         float y = -mPaint.ascent(); // cant be 0 because drawing the text start from baseline
         
-        for(int i = 0; i < mLettersToDrawSoFar; i++) { // draw all letters allowed to show so far
+		// draw all letters allowed to show so far
+        for(int i = 0; i < mLettersToDrawSoFar; i++) { 
             char letter = mText.charAt(i % mText.length());
-
             canvas.drawText(letter+"", x, y, mPaint);
-
             x += letterWidth;
         }
-
-        if (x < getWidth()) { // not hit the right edge yet
+		
+		boolean isLettersStillVisible = x < getWidth();
+		
+        if (isLettersStillVisible) { 
             mLettersToDrawSoFar++;
-            postInvalidateDelayed(100);
+            postInvalidateDelayed(10);
             return;
         }
         // else
