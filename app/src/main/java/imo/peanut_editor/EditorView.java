@@ -47,8 +47,11 @@ public class EditorView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         float letterWidth = mPaint.measureText(" ");
+		float letterHeight = mPaint.descent() - mPaint.ascent();
+		letterHeight /= 2; // apparently its resulted in 2x expected size so we make it half
+
         float x = 0;
-        float y = -mPaint.ascent(); // cant be 0 because drawing the text start from baseline
+        float y = -mPaint.ascent(); // should've been 0 but drawing the text start from baseline
         
 		// draw all letters allowed to show so far
         for(int i = 0; i < mLettersToDrawSoFar; i++) { 
@@ -65,7 +68,10 @@ public class EditorView extends View {
             return;
         }
         // else
-        // TODO: draw how many letters has been drawn on another line
+		x = 0;
+		y += letterHeight + -mPaint.ascent();
+		int maximumLetters = mLettersToDrawSoFar;
+		canvas.drawText("maximum letters: " + maximumLetters, x, y, mPaint);
         
     }
 }
