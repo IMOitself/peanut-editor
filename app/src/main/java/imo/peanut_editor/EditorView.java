@@ -45,6 +45,8 @@ public class EditorView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawText(mText, 100, 100, mPaint);
+        float x = 0;
+        float y = -mPaint.ascent(); // cant be 0 because drawing the text start from baseline
+        canvas.drawText(mText, x, y, mPaint);
     }
 }
